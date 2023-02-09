@@ -3,12 +3,13 @@ import { useState } from 'react'
 export const useManageAPISTate = () => {
   const [isLoading, setLoad] = useState(false)
   const [error, setErr] = useState({ isError: false, message: 'Ocurrió un error' })
-  const [isSuccess, setSucc] = useState(true)
+  const [isSuccess, setSucc] = useState(false)
 
   const setError = ({ message = 'Ocurrió un error' }) => {
+    console.log(message)
     setLoad(false)
     setSucc(false)
-    setErr({ isError: true, message })
+    setErr({ isError: true, message: `${message}` })
   }
   const setSuccess = () => {
     setErr({ isError: false, message: 'Ocurrió un error' })

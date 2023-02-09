@@ -1,0 +1,26 @@
+.spinner{
+  content: '';
+  width: 3em;
+  height: 3em;
+  background: linear-gradient(0.25turn, #5024de, #af2fea, #d639dc);
+  border-radius: 50%;
+  position: relative;
+  animation: spinn 1.2s infinite linear;
+}
+.spinner::after{
+  content: '';
+  background-color: var(--color-background,white);
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@keyframes spinn {
+  to{
+    transform: rotate(360deg);
+  }
+}

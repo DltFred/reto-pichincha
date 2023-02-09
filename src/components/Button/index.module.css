@@ -7,7 +7,15 @@
   color: var(--color-background, white);
   display: flex;
   border-radius: .2rem;
+  transition: transform .2s ease;
 }
 .button img{
   padding-right: .5rem;
+}
+.button:active{
+  transform: scale(.9);
+}
+.disabled{
+  pointer-events: none;
+  opacity: .5;
 }

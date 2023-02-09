@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+.container>div{
   position: relative;
 }
 .label{
@@ -20,13 +22,14 @@
 }
 .img {
   position: absolute;
-  top: .8em;
+  top: .6em;
   left: .8em;
   height: 1.2em;
   width: 1.2em;
 }
 
 .input[type="range"] {
+  box-sizing: border-box;
   padding: 0 3em 0 1em;
   appearance: none;
   background: transparent;
@@ -36,7 +39,7 @@
 }
 .input[type="range"]::-webkit-slider-runnable-track {
   background: var(--color-smooth,grey);
-  box-shadow: inset calc(var(--width-track)*15/100) 0  var(--color-accent,blueviolet);
+  box-shadow: inset calc(var(--width-track)*10/100) 0  var(--color-accent,blueviolet);
   border-radius: 2rem;
   height: 0.5rem;
 }
@@ -63,8 +66,33 @@
 }
 .min, .max{
   position: absolute;
-  top: .5em;
+  top: .1em;
 }
 .max{
   right: 0;
+}
+.chip{
+  display: none;
+  justify-content: center;
+  background-color: var(--color-accent,blueviolet);
+  color: var(--color-background,white);
+  border-radius: .2rem;
+  width: 2rem;
+  position: absolute;
+  top: -2rem;
+  left: calc(var(--width-track)*8.5/100);
+}
+.chip::after{
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-right: .5rem solid transparent;
+  border-left: .5rem solid transparent;
+  border-top: .5rem solid var(--color-accent,blueviolet);
+  top: 1.3rem;
+  
+}
+.input[type="range"]:hover ~ .chip {
+  display: flex;
 }

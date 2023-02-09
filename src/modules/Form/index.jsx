@@ -17,6 +17,11 @@ export const NewPokemonForm = ({ setShow, dataToEdit, setDataToEdit, createNewPo
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    if (!values.name || !values.image) {
+      // eslint-disable-next-line no-undef
+      alert('Los campos no pueden estar vacios')
+      return
+    }
     if (values.id === null || values.id === undefined) createNewPokemon(values)
     else updateNewPokemon(values)
     handleReset()
@@ -78,6 +83,7 @@ export const NewPokemonForm = ({ setShow, dataToEdit, setDataToEdit, createNewPo
         <Button
           img={iconSave}
           onClick={handleSubmit}
+          disabled={!values.name || !values.image}
         >Guardar
         </Button>
         <Button
