@@ -1,0 +1,17 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing: border-box;
+
+  --color-accent: #6756f9;
+  --color-smooth: #d9d9d9;
+  --color-background: #f9f9f9;
+  --color-active: #c89ba5;
+}
+
+#root {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+}

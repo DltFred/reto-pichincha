@@ -1,0 +1,13 @@
+.button {
+  cursor: pointer;
+  padding: 1em 2em;
+  border: none;
+  outline: none;
+  background-color: var(--color-accent, blueviolet);
+  color: var(--color-background, white);
+  display: flex;
+  border-radius: .2rem;
+}
+.button img{
+  padding-right: .5rem;
+}

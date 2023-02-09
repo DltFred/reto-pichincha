@@ -1,0 +1,11 @@
+.table, .table th, .table td{
+  border-collapse: collapse;
+  border: .15rem var(--color-smooth,grey) solid;
+  padding: .2em 1em;
+}
+.table{
+  width: 100%;
+}
+.table th{
+  text-align: center;
+}

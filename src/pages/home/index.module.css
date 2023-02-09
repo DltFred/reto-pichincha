@@ -1,0 +1,19 @@
+.navigate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+.image{
+  aspect-ratio: 1/1;
+  max-width: 3em;
+  display: flex;
+  margin: auto;
+}
+.icons{
+  display: flex;
+  justify-content: space-evenly;
+  height: 1.3em;
+}
+.section{
+  margin-bottom: 2em;
+}
