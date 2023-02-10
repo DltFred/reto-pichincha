@@ -15,3 +15,11 @@
   margin: 0 auto;
   padding: 2rem;
 }
+@media screen and (max-width:760px) {
+  #root{
+    margin: 0;
+    padding: 1em;
+    overflow-x: hidden;
+    font-size: 12px;
+  }
+}

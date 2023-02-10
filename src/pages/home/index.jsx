@@ -99,7 +99,9 @@ function Dashboard () {
         />
         <Button img={iconNew} onClick={() => setShowForm(true)}>Nuevo </Button>
       </div>
-      <Table columns={COLUMNS} rows={pokemons} style={{ marginBottom: '2em' }} />
+      <div className={style.tableContainer}>
+        <Table columns={COLUMNS} rows={pokemons} />
+      </div>
       {
         pokemonState.error.isError && <p>{pokemonState.error.message}</p>
       }

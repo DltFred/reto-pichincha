@@ -22,10 +22,10 @@
 }
 .img {
   position: absolute;
-  top: .6em;
-  left: .8em;
-  height: 1.2em;
-  width: 1.2em;
+  top: .6rem;
+  left: .8rem;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
 .input[type="range"] {

@@ -50,6 +50,14 @@ export const NewPokemonForm = ({ setShow, dataToEdit, setDataToEdit, createNewPo
           onChange={handleChange}
           value={values.name}
         />
+        <Input
+          label='Imagen: '
+          placeholder='Url'
+          type='text'
+          name='image'
+          onChange={handleChange}
+          value={values.image}
+        />
         <InputTypeRange
           label='Ataque: '
           type='range'
@@ -59,14 +67,6 @@ export const NewPokemonForm = ({ setShow, dataToEdit, setDataToEdit, createNewPo
           onChange={handleChange}
           style={{ '--width-track': `${values.attack}em` }}
           value={values.attack}
-        />
-        <Input
-          label='Imagen: '
-          placeholder='Url'
-          type='text'
-          name='image'
-          onChange={handleChange}
-          value={values.image}
         />
         <InputTypeRange
           label='Defensa: '

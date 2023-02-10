@@ -35,3 +35,16 @@
   left: 0%;
   backdrop-filter: blur(.2em);
 }
+.tableContainer{
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width:760px) {
+  .tableContainer{
+    overflow-x: auto;
+  }
+  .navigate{
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+}

@@ -1,4 +1,5 @@
 .form{
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,16 +9,23 @@
 }
 .inputs{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: column;
   width: 100%;
   gap: 1em;
   margin-bottom: 2em;
-}
-.inputs div:nth-child(even){
-  justify-self: end;
+  justify-content: space-between;
 }
 .buttons{
   display: flex;
   flex-direction: row;
   gap: 1em;
+  flex-wrap: wrap;
+}
+@media screen and (max-width:500px){
+  .inputs{
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    justify-content: center;
+  }
 }
