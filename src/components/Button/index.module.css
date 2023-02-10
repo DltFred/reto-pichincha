@@ -15,7 +15,7 @@
 .button:active{
   transform: scale(.9);
 }
-.disabled{
+.button:disabled{
   pointer-events: none;
   opacity: .5;
 }
